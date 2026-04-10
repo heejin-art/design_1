@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* ㄴ유니코드라고함 */
+/* reset */
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: #333;}
+
+body {font-family:'Pretendard', '맑은 고딕', 'sans-serif';}
+
+.container {width: 1400px; margin: 0 auto; border: 1px solid #000;} 
+/* container 들어가는 부분이 겹쳐서 진하게 된거임*/
+
+header {}
+header .topset {display: flex; justify-content: space-between;}
+header .topset .search_box {}
+header .topset .login_box {font-size: 15px;}
+header .topset .login_box .login {display: flex; justify-content: end;}
+header .topset .login_box .logout {display: none;}
+header .topset .login_box a {border: 1px solid #000; padding: 16px 7px;}
+/* header .topset .login_box {font-size: 0px;}
+header .topset .login_box a {border: 1px solid #000; font-size: 15px;} */
+
+
+/* header h1 {display: flex; justify-content: center;}*/
+header h1 {border: 1px solid red;; text-align: center;;}
+/* header h1 m0-a 줘도 가운데로 안가는 이유?  display: block은 width가 auto인데 거의 가로 100%같은거랑 비슷 */
+header nav {margin-top: 34px; border: 1px solid red;}
+header nav .gnb {border: 1px solid #000; display: flex;}
+header nav .gnb li {border: 1px solid blue; font-size: 18px; flex-grow: 1; display: flex;}
+/* header nav .gnb li a {border: 1px solid green; display: flex; justify-content: center;}*/
+header nav .gnb li a {border: 1px solid green; flex-grow: 1; text-align: center; padding: 13px 0;}
